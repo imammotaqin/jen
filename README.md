@@ -9,6 +9,7 @@ with no build step and stays fast on any connection.
 ## Highlights
 
 - Editorial serif / technical mono design system with light & dark themes
+- Portrait-led profile badge and a matching 1200×630 social preview card
 - Animated “SIT summary” hero card reflecting real QA coverage
 - Client logo marquee, onsite engagement case cards with official company links
 - Filterable index of 30 tested workstreams
@@ -28,6 +29,7 @@ with no build step and stays fast on any connection.
 │   ├── css/styles.css          # Design tokens + components
 │   ├── js/main.js              # Theme, nav, reveal, filters, counters
 │   ├── logos/                  # Company & university marks
+│   ├── img/                    # Portrait (extracted from the CV)
 │   ├── cv/                     # Downloadable CV (PDF)
 │   ├── og-image.png            # 1200×630 social card
 │   └── favicon.svg

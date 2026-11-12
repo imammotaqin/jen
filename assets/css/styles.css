@@ -638,21 +638,38 @@ section[id], #top { scroll-margin-top: calc(var(--header-h) + 10px); }
   opacity: 0.92;
   font-size: 0.6rem;
 }
-.monogram {
+.id-photo {
   position: relative;
-  width: 78px; height: 78px;
+  width: 96px;
+  height: 96px;
   margin-top: 26px;
+  border-radius: 22px;
+  border: 3px solid var(--surface);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  z-index: 1;
+}
+.id-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  border-radius: 19px;
+}
+.id-photo-badge {
+  position: absolute;
+  right: -7px;
+  bottom: -7px;
   display: grid;
   place-items: center;
-  border-radius: 20px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-sm);
-  font-family: var(--font-display);
-  font-size: 2rem;
-  letter-spacing: -0.02em;
-  color: var(--accent);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+  border: 2px solid var(--surface);
 }
+.id-photo-badge .i { width: 13px; height: 13px; }
 .id-name {
   font-family: var(--font-display);
   font-size: 1.45rem;
