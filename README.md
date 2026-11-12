@@ -56,17 +56,9 @@ Then open <http://localhost:4173>.
 
 `vercel.json` already handles clean URLs, basic security headers and asset caching.
 
-### After the first deploy
-
-Update the social preview URL to an absolute address (social crawlers do not accept
-relative image paths). In `index.html`:
-
-```html
-<meta property="og:image" content="https://YOUR-DOMAIN/assets/og-image.png" />
-<meta name="twitter:image" content="https://YOUR-DOMAIN/assets/og-image.png" />
-```
-
-Add `"og:url"` and `<link rel="canonical">` with the final domain as well.
+The production URL is **https://jen-rouge.vercel.app/**. Canonical, Open Graph,
+Twitter Card and JSON-LD URLs already point at it. If you attach a custom domain,
+update those absolute URLs in `index.html` and the `Sitemap:` line in `robots.txt`.
 
 ## Updating content
 
